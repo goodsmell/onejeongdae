@@ -1,15 +1,5 @@
 import React, { useState } from 'react';
-import {
-  Play,
-  Plus,
-  ThumbsUp,
-  Volume2,
-  X,
-  ChevronRight,
-  Share2,
-  Map as MapIcon,
-  Clock,
-} from 'lucide-react';
+import { Play, Plus, ThumbsUp, Volume2, X, ChevronRight, Clock } from 'lucide-react';
 import Thumnail1 from './assets/thumnail1.png';
 import poster from './assets/poster.png';
 import map from './assets/map.png';
@@ -56,6 +46,15 @@ const App = () => {
       },
       {
         id: 3,
+        title: '무한 복제의 저주를 풀어라 - 메모리 구원 작전',
+        duration: '11분',
+        description:
+          '보이지 않는 연결이 없었다면, 모든 객체는 같은 기술을 하나씩 따로 들고 싸워야 했다.끝없는 복제, 끝없는 낭비. 하지만 표지판을 따라 필요한 힘만 빌려 쓸 수 있게 되자, 이 세계의 질서는 완전히 달라지기 시작한다.',
+        thumbnailColor: 'from-gray-800/40',
+        thumbnail: Thumnail1,
+      },
+      {
+        id: 4,
         title: '섀도잉: 부모를 지운 아이',
         duration: '11분',
         description:
@@ -64,7 +63,7 @@ const App = () => {
         thumbnail: Thumnail1,
       },
       {
-        id: 4,
+        id: 5,
         title: '(최종화): 최후의 심판: 0%의 정답률',
         duration: '10분',
         description:
