@@ -43,7 +43,7 @@ const App = () => {
         duration: '12분',
         description: '마을엔 하나의 소문이 돈다. JS 세계엔 보이지 않는 연결이 있다고,,,',
         thumbnailColor: 'from-orange-900/40',
-        thumbnail: Thumnail1, // 임시 이미지 (로컬 이미지로 교체 가능)
+        thumbnail: Thumnail1,
       },
       {
         id: 2,
@@ -112,9 +112,6 @@ const App = () => {
                 <span className="bg-red-600 text-white text-[8px] md:text-[10px] font-black px-1.5 md:px-2 py-0.5 rounded-sm tracking-tighter uppercase">
                   Netflix Series
                 </span>
-                <p className="text-orange-500 font-bold tracking-[0.2em] md:tracking-[0.4em] text-[8px] md:text-[10px] drop-shadow-md uppercase">
-                  Advanced Labs Presents
-                </p>
               </div>
 
               <h1 className="text-5xl sm:text-7xl md:text-9xl font-black italic tracking-tighter drop-shadow-[0_10px_10px_rgba(0,0,0,1)] text-transparent bg-clip-text bg-gradient-to-b from-white via-gray-200 to-gray-500 mb-2 leading-none">
@@ -198,37 +195,6 @@ const App = () => {
                 {dramaInfo.synopsis}
               </p>
             </div>
-          </div>
-
-          <div className="flex-1 pt-6 space-y-4 text-xs border-t md:space-y-6 md:text-sm border-white/10 md:border-t-0 md:pt-0">
-            <div className="group">
-              <span className="text-gray-500 block mb-1 uppercase text-[10px] md:text-[11px] tracking-[0.1em] md:tracking-[0.2em] font-black">
-                출연진
-              </span>
-              <p className="leading-relaxed text-gray-300 transition-colors group-hover:text-white">
-                {dramaInfo.cast.join(', ')}
-              </p>
-            </div>
-            <div className="group">
-              <span className="text-gray-500 block mb-1 uppercase text-[10px] md:text-[11px] tracking-[0.1em] md:tracking-[0.2em] font-black">
-                장르
-              </span>
-              <p className="leading-relaxed text-gray-300 transition-colors group-hover:text-white">
-                {dramaInfo.genres.join(', ')}
-              </p>
-            </div>
-            <div className="group">
-              <span className="text-gray-500 block mb-1 uppercase text-[10px] md:text-[11px] tracking-[0.1em] md:tracking-[0.2em] font-black">
-                이 시리즈의 특징
-              </span>
-              <p className="leading-relaxed text-gray-300 transition-colors group-hover:text-white">
-                {dramaInfo.characteristics.join(', ')}
-              </p>
-            </div>
-            <button className="flex items-center w-full gap-2 pt-4 font-bold text-gray-400 transition-colors border-t hover:text-white border-white/10">
-              <Share2 size={16} className="md:w-[18px]" />
-              공유하기
-            </button>
           </div>
         </div>
 
